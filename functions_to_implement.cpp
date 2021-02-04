@@ -1,10 +1,19 @@
 /* String functions section */
 
 // Splits a single string on separator into a vector of strings
-std::vector<std::string> Split(std::string whole, std::string separator);
+std::vector<std::string> Split(std::string whole, std::string separator){
+  //Adding code for first function
+  std::vector<std::string> split;
+  split.push_back(whole);
+  return split;
+}
 
 // takes two strings and returns a new string that is the result of removing all occurrences of s2 from s1.
-std::string RemoveAllSubstrings(std::string s1, std::string s2);
+std::string RemoveAllSubstrings(std::string s1, std::string s2){
+  //adding code for second function
+  std::string ret = s1;
+  return ret;
+}
 
 // takes two strings and returns a new string that is the result of removing the first occurrence of s2 from s1.
 std::string RemoveFirstSubstring(std::string s1, std::string s2);
