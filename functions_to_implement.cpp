@@ -1,6 +1,5 @@
 /* String functions section */
 
-//Names: Will Loughlin, Justin Murillo, Julia Rubtsov
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
 
@@ -53,8 +52,12 @@ std::vector<int> SquaresUntil(int n);
 int NthFibonacci(int n);
 
 // takes an int, n, and returns the factorial of that int (n!)
-int Factorial(int n);
-
+int Factorial(int n){
+    if (n > 1)
+        return n*Factorial(n-1);
+    else
+        return 1;
+}
 // returns -1 if the number is negative and 1 if positive
 int Sign(int num) {
     if (num < 0) {
