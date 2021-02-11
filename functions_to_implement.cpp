@@ -63,15 +63,12 @@ int NthFibonacci(int n);
 
 // takes an int, n, and returns the factorial of that int (n!)
 int Factorial(int n){
-  if (n <= 1) {
+  if (n > 1) {
+    return n*Factorial(n-1);
+  }
+  else{
     return 1;
   }
-  int factorial = 1;
-  for(int i = 1; i <=n; ++i) {
-    factorial *= i;
-  }
-  return factorial;
-}
 
 // returns -1 if the number is negative and 1 if positive
 int Sign(int num) {
